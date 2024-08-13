@@ -3,15 +3,18 @@
 <p> The person object is named "person" </p>
 <p id="feedback"></p>
 <input id="input"></input>
+<button onclick="startListen()">Submit</button>
 
 <script>
-let input = document.getElementById("input").value
-let feedback = document.getElementById("feedback")
-if(input == "person.name == "Jill"'){
-feedback.innerText = "Correct! Well done!!"
-} elseif(input == 'person.name == "jill"'){
-feedback.innerText = "so close, Jill's name isn't quite right."
-}else{
-feedback.innerText = "uh oh... not what i was looking for"
-}
+function startListen(){
+    let input = document.getElementById("input").value
+    let feedback = document.getElementById("feedback")
+    if(input == "person.name == "Jill"'){
+    feedback.innerText = "Correct! Well done!!"
+    } elseif(input == 'person.name == "jill"'){
+    feedback.innerText = "so close, Jill's name isn't quite right."
+    }else{
+    feedback.innerText = "uh oh... not what i was looking for"
+    }
+  }
 </script>
