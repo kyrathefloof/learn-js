@@ -1,3 +1,17 @@
+<script>
+function startListen(){
+    let input = document.getElementById("input").value
+    let feedback = document.getElementById("feedback")
+    if(input == "person.name == \"Jill\"'){
+    feedback.innerText = "Correct! Well done!!"
+    } elseif(input == 'person.name == \"jill\"'){
+    feedback.innerText = "so close, Jill's name isn't quite right."
+    }else{
+    feedback.innerText = "uh oh... not what i was looking for"
+    }
+  }
+</script>
+
 <h1> First exercise </h1>
 <p>Give person the name Jill</p>
 <p> The person object is named "person" </p>
@@ -5,16 +19,4 @@
 <input id="input"></input>
 <button onclick="startListen()">Submit</button>
 
-<script>
-function startListen(){
-    let input = document.getElementById("input").value
-    let feedback = document.getElementById("feedback")
-    if(input == "person.name == "Jill"'){
-    feedback.innerText = "Correct! Well done!!"
-    } elseif(input == 'person.name == "jill"'){
-    feedback.innerText = "so close, Jill's name isn't quite right."
-    }else{
-    feedback.innerText = "uh oh... not what i was looking for"
-    }
-  }
-</script>
+
